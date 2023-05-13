@@ -1,0 +1,202 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -webkit-text-size-adjust: 100%;
+  font-family: "Poppins", sans-serif;
+  color-scheme: light dark;
+  overflow-x: hidden;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:focus, a:active {
+  outline: none;
+}
+a:visited, a:hover {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+main {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.parallax {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bg {
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background: url("../videos/usa-flag.mp4") center center no-repeat;
+}
+@media (min-width: 600px) {
+  .bg {
+    height: auto;
+    width: 120%;
+  }
+}
+
+.info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20%;
+  line-height: 1.1;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 600px) {
+  .info {
+    display: block;
+  }
+}
+.info h1,
+.info h2 {
+  font-size: 32px;
+}
+.info h1 {
+  font-weight: 800;
+}
+.info h2 {
+  font-weight: 100;
+}
+@media (min-width: 600px) {
+  .info h1 {
+    font-size: 5rem;
+  }
+  .info h2 {
+    font-size: 3rem;
+  }
+}
+
+footer {
+  position: fixed;
+  z-index: 2;
+  background: white;
+  color: #222;
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 12px;
+}
+@media (min-width: 600px) {
+  footer {
+    flex-wrap: nowrap;
+  }
+}
+
+.footer__copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.footer__copyright img {
+  width: 24px;
+  height: 24px;
+}
+.footer__copyright a {
+  font-weight: 700;
+}
+
+.footer__link {
+  font-weight: 700;
+}
+
+.info-screen {
+  z-index: 3;
+  line-height: 1.5rem;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -35%);
+}
